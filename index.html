@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Rose</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/foto3.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Mr+Dafoe&family=Yesteryear&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa&family=Noto+Nastaliq+Urdu&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Iceberg&display=swap");
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="hero-container"  data-aos="fade-down" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+        <div class="bg"> 
+          <img src="assets/img/head1.png" alt="img" class="orn1" />
+          <h5>We Are Getting Married</h5>
+          <h1>Fulan & Fulanah</h1>
+            <!-- cd time -->
+            <section id="cdtime" class="cdtime" data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="2500">
+              <div class="container">
+                <h5>- Save The Date -</h5>
+                <div id="time" class="time-section d-flex justify-content-center">
+                  <div class="dd">
+                    <span>Days</span>
+                    <p id="days">00</p>
+                  </div>
+                  <div class="dd">
+                    <span>Hours</span>
+                    <p id="hours">00</p>
+                  </div>
+                  <div class="dd">
+                    <span>Minutes</span>
+                    <p id="minutes">00</p>
+                  </div>
+                  <div class="dd">
+                    <span>Seconds</span>
+                    <p id="seconds">00</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- js cdtime -->
+            <script>
+              var countDownDate = new Date("april 24, 2023 07:00:00").getTime();
+              var x = setInterval(function () {
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("days").innerHTML = days;
+                document.getElementById("hours").innerHTML = hours;
+                document.getElementById("minutes").innerHTML = minutes;
+                document.getElementById("seconds").innerHTML = seconds;
+
+                if (distance < 0) {
+                  clearInterval(x);
+                  document.getElementById("days").innerHTML = 00;
+                  document.getElementById("hours").innerHTML = 00;
+                  document.getElementById("minutes").innerHTML = 00;
+                  document.getElementById("seconds").innerHTML = 00;
+                }
+              }, 1000);
+            </script>
+            <!-- end cdtime -->
+          <img src="assets/img/head1.png" alt="img" class="orn2"/>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero -->
+  
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2 style="font-family: poppins">SAVE THE DATE</h2>
+            <p>Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri acara pernikahan kami :</p>
+          </div>
+        </div>
+      </section>
+      <!-- end about -->
+
+      <!-- mempelai -->
+      <section id="mempelai" class="mempelai">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="section-title" data-aos="fade-up">
+                <h2>Mempelai</h2>
+              </div>
+            </div>
+            <p>وَأَنكِحُوا۟ ٱلْأَيَٰمَىٰ مِنكُمْ وَٱلصَّٰلِحِينَ مِنْ عِبَادِكُمْ وَإِمَآئِكُمْ ۚ إِن يَكُونُوا۟ فُقَرَآءَ يُغْنِهِمُ ٱللَّهُ مِن فَضْلِهِۦ ۗ وَٱللَّهُ وَٰسِعٌ عَلِيمٌ (النور)</p>
+        <h6>
+          Dan kawinkanlah orang-orang yang sedirian diantara kamu, dan orang-orang yang layak (berkawin) dari hamba-hamba sahayamu yang lelaki dan hamba-hamba sahayamu yang perempuan. Jika mereka miskin Allah akan memampukan mereka dengan
+          kurnia-Nya. Dan Allah Maha luas (pemberian-Nya) lagi Maha Mengetahui. (an-nur : 32)
+        </h6>
+            <div class="col-lg">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="pic"><img src="assets/img/foto3.png" class="img-fluid" alt="" /></div>
+                    <div class="member-info">
+                      <h4>Fulanah</h4>
+                      <p>putri dari</p>
+                      <span>Bp. abu fulanah & Ibu. ummu fulanah</span>
+                      <p>Indonesia</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg">
+                  <div class="member" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="pic"><img src="assets/img/foto3.png" class="img-fluid" alt="" /></div>
+                    <div class="member-info">
+                      <h4>Fulan</h4>
+                      <p>putra dari</p>
+                      <span>Bp. abu fulan & Ibu. ummu fulan</span>
+                      <p>Indonesia</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end mempelai -->
+
+      <!-- akad -->
+      <section id="akad" class="akad section-bg">
+        <div class="container">
+            <div class="col">
+              <div class="section-title" data-aos="fade-up">
+                <h2>Akad & Resepsi</i></h2>
+              </div>
+            </div>
+            <div class="col">
+                <div class="col mt-4">
+                  <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
+                    <h4><a href="#none">00 Xxxxx 0000</a></h4>
+                    <br>
+                    <h4><a href="#none">00.00</a></h4>
+                    <br>
+                    <div class="map" data-aos="zoom-in" data-aos-delay="200">
+                      <p class="text-center">Gandurejo, Sewurejo, Mojogedang, Karanganyar, Jawa Tengah</p>
+                      <div class="maps">
+                        <iframe
+                          class="mb mb-lg"
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.8173077452157!2d111.0313655152819!3d-7.594853077159865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a1f42bb955d03%3A0x71c38e6319f6857b!2sgriya%20pak%20hasan!5e0!3m2!1sid!2sid!4v1670769340528!5m2!1sid!2sid"
+                          width="100%"
+                          height="200"
+                          style="border: 5px solid #5e1b1b"
+                          allowfullscreen=""
+                          loading="lazy"
+                          referrerpolicy="referrer-when-downgrade"
+                        ></iframe>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- end akad -->
+
+      <!-- ======= galeri Section ======= -->
+      <section id="testimonials" class="testimonials">
+        <div class="container" data-aos="zoom-in">
+          <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/foto3.png" class="testimonial-img" alt="">
+                  <h3>Perkenalan</h3>
+                  <h4>00 Xxxxx 0000</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure perspiciatis temporibus, qui porro aliquam quis laudantium. Corrupti aliquam, ipsa ad nobis quos nostrum quisquam necessitatibus architecto quod incidunt? Quidem, voluptate?
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/foto3.png" class="testimonial-img" alt="">
+                  <h3>Tunangan</h3>
+                  <h4>00 Xxxxx 0000</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate vel saepe, illo totam adipisci sapiente sed odit quas tempore repellat a, voluptatibus dolore blanditiis facilis dolorum enim vitae culpa.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/foto3.png" class="testimonial-img" alt="">
+                  <h3>Lamaran</h3>
+                  <h4>00 Xxxxx 0000</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident assumenda quis, temporibus harum neque vero ea esse velit autem sunt ducimus libero beatae officiis et corrupti pariatur odit unde cum!
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+  
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <img src="assets/img/foto3.png" class="testimonial-img" alt="">
+                  <h3>Menikah</h3>
+                  <h4>00 Xxxxx 0000</h4>
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsum officiis quasi animi reiciendis molestiae, mollitia cupiditate autem neque ex libero, ea voluptatibus expedita? Odit perferendis amet sunt ad placeat.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                </div>
+              </div><!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End galeri Section -->
+
+      <!-- gift -->
+      <section id="gift" class="gift">
+        <div class="container" data-aos="zoom-in">
+          <div class="section-title">
+            <h2>Do'a & Ucapan</h2>
+          </div>
+          <div class="row">
+            <div class="fulan">
+              <h3>- Fulanah -</h3>
+              <div class="row pesan-fulan">
+                <button><a href="https://www.instagram.com/zever_s/">Kirim Ucapan Via Instagram</a></button>
+                <button><a href="https://wa.me/qr/5NXSUY7TJ754C1">Kirim Ucapan Via Whatsapp</a></button>
+              </div>
+            </div>
+            <div class="fulanah">
+              <h3>- Fulan -</h3>
+              <div class="row pesan-fulan">
+                <button><a href="https://www.instagram.com/zever_s/">Kirim Ucapan Via Instagram</a></button>
+                <button><a href="https://wa.me/qr/5NXSUY7TJ754C1">Kirim Ucapan Via Whatsapp</a></button>
+              </div>
+            </div>
+            <button id="myBtn">Kado digital</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                  <!-- Modal content -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    
+                    <h4>BSI</h4>
+                    <input type="text" value="nomer rekening" id="myInput">
+                    <button onclick="myFunction()">Salin</button>
+                  </div>
+
+                </div>
+          </div>
+        </div>
+      </section>
+      <!-- end gift -->
+
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="social-links">
+          <a href="https://www.instagram.com/zever_s/" class="instagram"><i class="ri-instagram-line"></i></a>
+          <a href="https://wa.me/qr/5NXSUY7TJ754C1"><i class="ri-whatsapp-line"></i></a>
+        </div>
+        <div class="copyright">
+          &copy; Copyright <strong><span>invitUS</span></strong
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+      var modal = document.getElementById("myModal");
+      
+      var btn = document.getElementById("myBtn");
+      
+      var span = document.getElementsByClassName("close")[0];
+      
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+      <script>
+        function myFunction() {
+          var copyText = document.getElementById("myInput");
+        
+          copyText.select();
+          copyText.setSelectionRange(0, 99999);
+        
+          navigator.clipboard.writeText(copyText.value);
+          
+          alert("Copied the text: " + copyText.value);
+        }
+        </script>
+        <script>
+          var loader = document.getElementById("load");
+    
+          window.addEventListener("load", function(){
+            loader.style.display = "none";
+          })
+        </script>
+  </body>
+</html>
